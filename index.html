@@ -5,11 +5,8 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$(".hank_table_title-logout").click(function(){
-				$htmlobj = $.ajax({success: function(){
-						console.log("result");
-					}
-				});
-				$(".hank_table_title-logout").html($htmlobj.responseText);
+				htmlobj = $.ajax({url:"/jquery/test1.txt",async:false});
+				$(".hank_table_title-logout").html(htmlobj.responseText);
 			});
 		});
 	</script>
