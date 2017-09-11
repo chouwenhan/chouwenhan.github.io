@@ -1,0 +1,22 @@
+.hank_table_title{
+	position: relative;
+	width: 100%;
+	float: left;
+}
+.hank_table_title-name{
+	width: 90%;
+	float: left;
+}
+.hank_table_title-logout{
+	box-sizing: border-box;
+	width: 10%;
+	float: right;
+	padding-left: 10px;
+}
+/*index style*/
+.hank_table_title_style{
+	font-size: 1vw;
+}
+.hank_table_title-logout_style{
+	border-left: 1px solid;
+}

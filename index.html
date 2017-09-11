@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".hank_table_title-logout").click(function(){
+				$htmlobj = $.ajax({success: function(){
+						console.log("result");
+					}
+				});
+				$(".hank_table_title-logout").html($htmlobj.responseText);
+			});
+		});
+	</script>
+	
+	<link rel="stylesheet" type="text/css" href="index.css">
 	<title> Hello this is hank website</title>
 </head>
-<body style="background-color: #171717;">
-	<form action="upload.php" method="post" enctype="multipart/form-data">
-		檔案名稱:<input type="file" name="file" id="acer_moonshoot_excel"/>
-		<input type="submit" name="submit" value="上傳檔案" />
-	</form>
+<body style="background-color: #171717; color: white;">
+	<div class="hank_table_title hank_table_title_style">
+		<div class="hank_table_title-name hank_table_title-name_style"> Hank's website</div>
+		<button class="hank_table_title-logout hank_table_title-logout_style"> log out</button>
+	</div>
 </body>
 </html>
