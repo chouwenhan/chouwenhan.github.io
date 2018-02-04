@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!-- <img src="./assets/logo.png"> -->
+    <teheader :totitle='totitle' :fromtitle='fromtitle' :showbar='showBar' :name="transitionName"></teheader>
     <router-view/>
   </div>
 </template>
 
 <script>
+import teheader from './components/teheader.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    teheader
+  }
 }
 </script>
 
