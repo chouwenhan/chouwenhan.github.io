@@ -25,7 +25,7 @@ export default {
 	width: 100%;
 	height: 60px; /* 視情況而定(本例依圖片高度而設定) */
 	position: fixed;
-	top: 0px;
+	top:0px;
 	z-index: 9999;
 	background-color: #FFAA33;
 }
