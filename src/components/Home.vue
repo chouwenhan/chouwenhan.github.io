@@ -7,7 +7,7 @@
     </el-carousel>
     <div class="box-flex box-top2 flex-direction-column">
         <div class="box-flex box-1" v-for="(item,index) in homearticle">
-        	<div class="box-flex box-padding" v-if="index%2==0">
+        	<div class="box-1 box-padding" v-if="index%2==0">
         		<div class="box-flex-img">
         			<img class="images-con" v-bind:src="homearticle[index].src">
         		</div>
@@ -15,7 +15,7 @@
         			<div class="images-text">{{item.text}}</div>
         		</div>
             </div>
-            <div class="box-flex box-padding" v-else>
+            <div class="box-1 box-padding" v-else>
         		<div class="box-flex-text">
         			<div class="images-text">{{item.text}}</div>
         		</div>
@@ -27,6 +27,45 @@
     </div>
     <div class="box-mywork box-top3 flex-direction-column">
     	<div class="mywork-content">My work</div>
+    </div>
+    <div class="box-myimage box-top4 flex-direction-column">
+    	<div class="myimage-row" style="height:60vh">
+    		<div class="myimage-column">
+    			<div style="height:20vh">
+    				<img class="images-height100" src="../assets/image_mountain.png">
+    			</div>
+    			<div style="height:20vh">
+    				<img class="images-height100" src="../assets/image_people.png">
+    			</div>
+    			<div style="height:20vh">
+    				<img class="images-height100" src="../assets/image_street.png">
+    			</div>
+    		</div>
+            <div class="myimage-column flex-4">
+    			<div class="flex-4" style="height:40vh">
+    				<img class="images-height100" src="../assets/image_cat.png">
+    			</div>
+    			<div class="flex flex-2 flex-direction-row" style="height:20vh;">
+	    			<div class="flex-1" style="width:50%;height:20vh;">
+	    				<img class="images-height100" src="../assets/image_sea.png">
+	    			</div>
+	    			<div class="flex-1" style="width:50%;height:20vh;">
+	    				<img class="images-height100" src="../assets/image_mountain.png">
+	    			</div>
+	    		</div>
+    		</div>
+    		<div class="myimage-column">
+    			<div style="height:20vh">
+    				<img class="images-height100" src="../assets/image_people.png">
+    			</div>
+    			<div style="height:20vh">
+    				<img class="images-height100" src="../assets/image_street.png">
+    			</div>
+    			<div style="height:20vh">
+    				<img class="images-height100" src="../assets/image_doll.png">
+    			</div>
+    		</div>
+    	</div>
     </div>
 </div>
 </template>
@@ -78,8 +117,7 @@ export default {
 	height: 20vw;
 }
 .box-padding {
-	/*height: 10vw;*/
-    margin: 2vw 10vw 0 10vw;
+    margin: 2vw 10vw 0vw 10vw;
 }
 .images-con {
 	max-height: 20vw;
@@ -112,7 +150,42 @@ export default {
 	font-size: 3vw;
 	line-height:3vw;
 }
-
-
 /*end home work*/
+/*home imagebox*/
+.box-myimage {
+	width: 100%;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+}
+.myimage-row {
+	display: -webkit-flex;
+	flex-direction: row;
+}
+.myimage-column {
+	flex-direction: column;
+	flex: 2;
+}
+.images-height100 {
+	height: 100%;
+}
+.flex {
+	display: -webkit-flex;
+}
+.flex-4 {
+	flex: 4;
+}
+.flex-2 {
+	flex: 2;
+}
+.flex-1 {
+	flex: 1;
+}
+.flex-direction-row {
+	flex-direction: row;
+}
+.flex-start {
+	align-items:flex-start;
+	justify-content:flex-start;
+}
 </style>
