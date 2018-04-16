@@ -96,16 +96,32 @@
     	</div>
     	<div class="my-person-profile-content-box">
     		<div class="my-person-profile-content-text-box">
-    			<div class="flex flex-direction-row ">	</div>
-    				<div class="flex flex-1">	</div>
-    				<div class="flex flex-2">	</div>
-    			<div class="flex flex-direction-row ">	</div>
-    				<div class="flex flex-1">	</div>
-    				<div class="flex flex-4">	</div>
-    			<div class="flex flex-direction-row ">	</div>
-    				<div class="flex flex-1">	</div>
-    				<div class="flex flex-4">	</div>
-    			<div class="flex flex-direction-row ">	</div>
+    			<div class="flex flex-direction-row height-10 margin-left-15">
+    				<div class="flex flex-1 "> <Icon class="icon" type="person" size="30" /></Icon> </div>
+    				<div class="flex flex-4" style="font-size:20px;margin: auto">hank</div>
+    			</div>
+    			<div class="flex flex-direction-row height-10 margin-left-15">	
+    				<div class="flex flex-1 "> <Icon class="icon" type="ios-email" size="30" /></Icon> </div>
+    				<div class="flex flex-4 " style="font-size:20px;margin: auto">a29554483@gmail.com </div>
+    			</div>
+    			<div class="flex flex-direction-row height-10 margin-left-15">	
+    				<div class="flex flex-1 "> <Icon class="icon" type="ios-telephone" size="30"></Icon> </div>
+    				<div class="flex flex-4" style="font-size:20px;margin: auto">0987539752</div>
+    			</div>
+    			<div class="flex flex-direction-row height-30 margin-left-15 margin-top-2">	
+    				<div class="flex flex-1 "> <Icon class="icon-book" type="ios-paper" size="30"> </Icon> </div>
+    				<div class="flex flex-4" style="text-align: left;"> 
+	    					<p>年齡: 27歲
+	    					<br>目前居住地: 台北
+	                        <br>任職: 宏碁 
+	                        <br>職稱: 程式設計師
+	                        <br>技能： web前端: vue,bootstrap,js,jquery
+	                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp web後端: php,slim,mysql
+	                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 環境相關: docker,linux,git
+	                        <br>GitHub個人主頁面： https://chouwenhan.github.io/dist/index.html#/home
+	                        </p>
+                    </div>
+    			</div>
     		</div>
     		<div class="my-person-profile-photo-box">	
     		</div>
@@ -271,10 +287,11 @@ export default {
 	margin-right: 1%; 
 }
 /*home myskill end*/
+/*home person profile*/
 .my-person-profile {
 	display: -webkit-flex;
 	flex-direction: column;
-	height: 60vh;
+	height: 80vh;
 	width: 100%;
 }
 .my-person-profile-text-box {
@@ -294,18 +311,34 @@ export default {
 }
 .my-person-profile-content-box {
 	display: -webkit-flex;
-	height:40vh;
+	height:60vh;
 	width: 100%;
-	align-items:flex-start;
-	justify-content:flex-start;
 	flex-direction: row;
 }
 .my-person-profile-content-text-box {
 	display: -webkit-flex;
 	width: 50%;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	/*align-items: center;
+	justify-content: center;*/
 }
-/*home person profile*/
+.height-10 {
+	height: 10vh;
+}
+.height-30 {
+	height: 30vh;
+}
+.icon {
+    margin: auto;
+}
+.icon-book {
+    margin: 0 auto;
+}
+.margin-left-15 {
+	margin-left: 15vw;
+}
+.margin-top-2 {
+	margin-top: 2vh;
+}
+
 </style>
