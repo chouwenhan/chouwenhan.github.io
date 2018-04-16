@@ -67,6 +67,50 @@
     		</div>
     	</div>
     </div>
+    <div class="my-skill">
+    	<div class="my-skill-text-box">
+    		<div class="my-skill-text">My Skill</div>
+    	</div>
+    	<div class="my-skill-circle-box">
+	    	<div class="flex-direction-column">
+				<el-progress type="circle" class="margin-right-1" :percentage="60"></el-progress>
+	            <span>JavaScript</span>
+	        </div>
+			<div class="flex-direction-column">
+				<el-progress type="circle" class="margin-right-1" :percentage="80"></el-progress>
+				<span>PHP</span>
+			</div>
+			<div class="flex-direction-column">
+				<el-progress type="circle" class="margin-right-1" :percentage="60"></el-progress>
+				<span>Mysql</span>
+			</div>
+	        <div class="flex-direction-column">
+				<el-progress type="circle" class="margin-right-1" :percentage="50"></el-progress>
+				<span>Vue</span>
+			</div>
+		</div>
+    </div>
+    <div class="my-person-profile">
+    	<div class="my-person-profile-text-box">
+    		<div class="my-person-profile-text">Personal Profile</div>
+    	</div>
+    	<div class="my-person-profile-content-box">
+    		<div class="my-person-profile-content-text-box">
+    			<div class="flex flex-direction-row ">	</div>
+    				<div class="flex flex-1">	</div>
+    				<div class="flex flex-2">	</div>
+    			<div class="flex flex-direction-row ">	</div>
+    				<div class="flex flex-1">	</div>
+    				<div class="flex flex-4">	</div>
+    			<div class="flex flex-direction-row ">	</div>
+    				<div class="flex flex-1">	</div>
+    				<div class="flex flex-4">	</div>
+    			<div class="flex flex-direction-row ">	</div>
+    		</div>
+    		<div class="my-person-profile-photo-box">	
+    		</div>
+    	</div>
+    </div>
 </div>
 </template>
 <script>
@@ -188,4 +232,80 @@ export default {
 	align-items:flex-start;
 	justify-content:flex-start;
 }
+/*home work end*/
+/*home myskill*/
+.my-skill {
+	display: -webkit-flex;
+	flex-direction: column;
+	height: 40vh;
+	width: 100%;
+	background-color: #69cb89;
+	margin-top:8vh; 
+}
+.my-skill-text-box {
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+	height:10vh;
+	width: 100%;
+	margin-bottom: 2%; 
+}
+.my-skill-text {
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3vw;
+	line-height:3vw;
+    color: white;
+}
+.my-skill-circle-box {
+	display: -webkit-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.flex-direction-column {
+	flex-direction: column;
+}
+.margin-right-1 {
+	margin-right: 1%; 
+}
+/*home myskill end*/
+.my-person-profile {
+	display: -webkit-flex;
+	flex-direction: column;
+	height: 60vh;
+	width: 100%;
+}
+.my-person-profile-text-box {
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+	height:20vh;
+	width: 100%;
+}
+.my-person-profile-text {
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3vw;
+	line-height:3vw;
+    color: black;
+}
+.my-person-profile-content-box {
+	display: -webkit-flex;
+	height:40vh;
+	width: 100%;
+	align-items:flex-start;
+	justify-content:flex-start;
+	flex-direction: row;
+}
+.my-person-profile-content-text-box {
+	display: -webkit-flex;
+	width: 50%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/*home person profile*/
 </style>
