@@ -96,19 +96,19 @@
     	</div>
     	<div class="my-person-profile-content-box">
     		<div class="my-person-profile-content-text-box">
-    			<div class="flex flex-direction-row height-10 margin-left-15">
+    			<div class="flex flex-direction-row height-8 margin-left-15">
     				<div class="flex flex-1 "> <Icon class="icon" type="person" size="30" /></Icon> </div>
     				<div class="flex flex-4" style="font-size:20px;margin: auto">hank</div>
     			</div>
-    			<div class="flex flex-direction-row height-10 margin-left-15">	
+    			<div class="flex flex-direction-row height-8 margin-left-15">	
     				<div class="flex flex-1 "> <Icon class="icon" type="ios-email" size="30" /></Icon> </div>
     				<div class="flex flex-4 " style="font-size:20px;margin: auto">a29554483@gmail.com </div>
     			</div>
-    			<div class="flex flex-direction-row height-10 margin-left-15">	
+    			<div class="flex flex-direction-row height-8 margin-left-15">	
     				<div class="flex flex-1 "> <Icon class="icon" type="ios-telephone" size="30"></Icon> </div>
     				<div class="flex flex-4" style="font-size:20px;margin: auto">0987539752</div>
     			</div>
-    			<div class="flex flex-direction-row height-30 margin-left-15 margin-top-2">	
+    			<div class="flex flex-direction-row height-26 margin-left-15 margin-top-2">	
     				<div class="flex flex-1 "> <Icon class="icon-book" type="ios-paper" size="30"> </Icon> </div>
     				<div class="flex flex-4" style="text-align: left;"> 
 	    					<p>年齡: 27歲
@@ -123,7 +123,10 @@
                     </div>
     			</div>
     		</div>
-    		<div class="my-person-profile-photo-box">	
+    		<div class="my-person-profile-photo-box">
+    			<div class="my-person-profile-img">
+    				<img class="height-20 radius" src="../assets/profile.png">
+    			</div>	
     		</div>
     	</div>
     </div>
@@ -291,7 +294,7 @@ export default {
 .my-person-profile {
 	display: -webkit-flex;
 	flex-direction: column;
-	height: 80vh;
+	height: 70vh;
 	width: 100%;
 }
 .my-person-profile-text-box {
@@ -311,22 +314,26 @@ export default {
 }
 .my-person-profile-content-box {
 	display: -webkit-flex;
-	height:60vh;
+	height:50vh;
 	width: 100%;
 	flex-direction: row;
 }
-.my-person-profile-content-text-box {
+.my-person-profile-content-text-box, .my-person-profile-photo-box {
 	display: -webkit-flex;
 	width: 50%;
 	flex-direction: column;
 	/*align-items: center;
 	justify-content: center;*/
 }
-.height-10 {
-	height: 10vh;
+
+.height-8 {
+	height: 8vh;
 }
 .height-30 {
 	height: 30vh;
+}
+.height-20 {
+	height: 20vh;
 }
 .icon {
     margin: auto;
@@ -340,5 +347,12 @@ export default {
 .margin-top-2 {
 	margin-top: 2vh;
 }
-
+.my-person-profile-img {
+	height: 20vh;
+	width: 10vw;
+	margin: auto;
+}
+.radius {
+	border-radius: 200px;
+}
 </style>
