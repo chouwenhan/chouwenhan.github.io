@@ -1,16 +1,14 @@
 <template>
-    <div class="width-80 margin-auto text-align-center flex-justify-center flex-items-center flex-content-center">
-        <a href="https://github.com/chouwenhan">
-        <span class="flex-1 ion-social-github font-size-20 textclolor-white margin-right-3"></span>
+    <div class="flex width-100 margin-auto text-align-center flex-justify-center flex-items-center flex-content-center">
+        <a target="_blank" href="https://github.com/chouwenhan">
+          <Icon type="social-github" size="30" color="white" style="margin:0vw 1vw"></Icon>
         </a>
-        <a href="https://twitter.com/Mr_paoying">
-        <span class="flex-1 ion-social-twitter font-size-20 textclolor-white margin-right-3"></span>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100001439120213">
+          <Icon type="social-facebook" size="30" color="white" style="margin:0vw 1vw"> </Icon>
         </a>
-        <span class="flex-1 ion-social-facebook font-size-20 textclolor-white margin-right-3" @click="emitA()"></span>
-        <a href="Mailto:a29554483@gmail.com">
-        <span class="flex-1 ion-social-googleplus font-size-20 textclolor-white margin-right-3"></span>
+        <a target="_blank" href="Mailto:a29554483@gmail.com">
+          <Icon type="social-googleplus" size="30" color="white" style="margin:0vw 1vw"></Icon>
         </a>
-        <span class="flex-1 ion-social-dribbble-outline font-size-20 textclolor-white margin-right-3" @click="emitP()"></span>
     </div>
 </template>
 <script>
@@ -38,13 +36,14 @@ export default {
 }
 </script>
 <style>
-.width-80 {
-  width: 80%;
+.flex {
+  display: -webkit-flex;
 }
-.margin-auto {
-  margin: auto;
+.width-100 {
+  width: 100%;
 }
 .text-align-center {
-  
+  justify-content: center;
+  align-items: center;
 }
 </style>

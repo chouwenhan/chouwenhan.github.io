@@ -130,8 +130,8 @@
     		</div>
     	</div>
     </div>
-    <div class="mylink-box height-20">
-    	<div class="mylink-text">© 2015 All rights reserved. Design and development by Hank Chou</div>
+    <div class="mylink-box height-16">
+    	<div class="mylink-text">© 2018 All rights reserved. Design and development by Hank Chou</div>
     	<div class="mylink-project-text">Projects made with</div>
     	<mylink></mylink>
     </div>
@@ -303,14 +303,14 @@ export default {
 .my-person-profile {
 	display: -webkit-flex;
 	flex-direction: column;
-	height: 70vh;
+	height: 60vh;
 	width: 100%;
 }
 .my-person-profile-text-box {
 	display: -webkit-flex;
 	align-items: center;
 	justify-content: center;
-	height:20vh;
+	height:10vh;
 	width: 100%;
 }
 .my-person-profile-text {
@@ -344,6 +344,9 @@ export default {
 .height-20 {
 	height: 20vh;
 }
+.height-16 {
+	height: 16vh;
+}
 .icon {
     margin: auto;
 }
@@ -375,11 +378,19 @@ export default {
 	width: 100%;
 }
 .mylink-text {
-	line-height: 5vh;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	line-height: 4vh;
 	color: #999;
 }
 .mylink-project-text {
-	line-height: 5vh;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	line-height: 4vh;
 	color: #fff;
 }
 </style>
