@@ -130,9 +130,15 @@
     		</div>
     	</div>
     </div>
+    <div class="mylink-box height-20">
+    	<div class="mylink-text">© 2015 All rights reserved. Design and development by Hank Chou</div>
+    	<div class="mylink-project-text">Projects made with</div>
+    	<mylink></mylink>
+    </div>
 </div>
 </template>
 <script>
+import mylink from './mylink.vue'
 export default {
   name: 'component',
   data () {
@@ -147,6 +153,9 @@ export default {
                     {'src':require('./../assets/article3.png'),'text':"PHP 应用及分享"},
                     {'src':require('./../assets/article4.png'),'text':"資料庫 应用及分享"}]
     }
+  },
+  components: {
+  	mylink
   }
 }
 </script>
@@ -354,5 +363,23 @@ export default {
 }
 .radius {
 	border-radius: 200px;
+}
+/*home person profile end*/
+/*home mylink*/
+.mylink-box {
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #333;
+	width: 100%;
+}
+.mylink-text {
+	line-height: 5vh;
+	color: #999;
+}
+.mylink-project-text {
+	line-height: 5vh;
+	color: #fff;
 }
 </style>
