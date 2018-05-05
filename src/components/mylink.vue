@@ -1,5 +1,5 @@
 <template>
-    <div class="flex width-100 margin-auto text-align-center flex-justify-center flex-items-center flex-content-center">
+    <div class="flex width-100 margin-auto text-align-center flex-justify-center flex-items-center flex-content-center" style="height: 4vh">
         <a target="_blank" href="https://github.com/chouwenhan">
           <Icon type="social-github" size="30" color="white" style="margin:0vw 1vw"></Icon>
         </a>

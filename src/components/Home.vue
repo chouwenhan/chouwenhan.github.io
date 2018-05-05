@@ -134,10 +134,18 @@
     	<div class="mylink-text">© 2018 All rights reserved. Design and development by Hank Chou</div>
     	<div class="mylink-project-text">Projects made with</div>
     	<mylink></mylink>
+    	<div class="counter flex-direction-row">
+	    	<!-- Start of CuterCounter Code -->
+	    	<div class ="flex flex-6 flex-center" style="height:6vh;font-size:2vh;line-height:2vh;margin-right:0.5vw;color: white">訪客人數:
+	    	</div>
+	    	<div class ="flex flex-6 flex-center" style="margin:auto;height:6vh" >
+		        <div href="http://www.cutercounter.com/traditional-chinese/" target="_blank"><img src="http://www.cutercounter.com/hit.php?id=9536&nd=6&style=50" border="0" alt="免费計數器"></div>
+		        <!-- End of CuterCounter Code -->
+	        </div>
+        </div>
     </div>
 </div>
 </template>
-
 <script>
 import mylink from './mylink.vue'
 export default {
@@ -244,6 +252,9 @@ export default {
 }
 .flex {
 	display: -webkit-flex;
+}
+.flex-6 {
+	flex: 6;
 }
 .flex-4 {
 	flex: 4;
@@ -383,7 +394,7 @@ export default {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	line-height: 4vh;
+	line-height: 3vh;
 	color: #999;
 }
 .mylink-project-text {
@@ -391,7 +402,18 @@ export default {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	line-height: 4vh;
+	line-height: 3vh;
 	color: #fff;
 }
+.counter {
+	height: 6vh;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
 </style>
+
