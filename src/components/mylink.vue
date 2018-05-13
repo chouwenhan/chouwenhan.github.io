@@ -12,23 +12,13 @@
     </div>
 </template>
 <script>
-// import comE from '../util/CommtEmit.js'
 export default {
   data () {
     return {
-      author: 'Hank',
+      author: 'Hank'
     }
   },
   methods: {
-    goback: function () {
-      window.history.back()
-    },
-    emitA: function () {
-      comE.$emit('id-selected', 1)
-    },
-    emitP: function () {
-      this.$emit('ee', 'cc' )
-    }
   },
   components: {
   },

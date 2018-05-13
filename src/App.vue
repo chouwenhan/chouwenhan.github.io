@@ -11,6 +11,14 @@ export default {
   name: 'App',
   components: {
     teheader
+  },
+  data () {
+    return {
+      totitle: true,
+      fromtitle: true,
+      showBar: true,
+      transitionName: true
+    }
   }
 }
 </script>
