@@ -1,6 +1,7 @@
 # chouwenhan.github.io
 
-> A Vue.js project
+> A personal web use Vue.js
+> url: https://chouwenhan.github.io/dist/index.html#/home
 
 ## Build Setup
 
